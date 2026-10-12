@@ -43,6 +43,10 @@ if search:
 st.title("Smart Campus Analytics — Student Success Platform")
 st.caption("Unified view of academic, attendance, LMS, engagement, placement, skills and feedback data")
 
+if view.empty:
+    st.warning("No students match these filters. Select at least one department, year, and risk level.")
+    st.stop()
+
 # ---------------- Tabs ----------------
 tab1, tab2, tab3, tab4 = st.tabs(["Overview", "At-risk watchlist", "Segments", "Student 360°"])
 
