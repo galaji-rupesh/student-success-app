@@ -1,0 +1,7 @@
+# Generated data files. The app creates these automatically when it starts.
+student_master.csv
+indicator_scores.csv
+
+# Python cache files
+__pycache__/
+*.py[cod]
